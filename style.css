@@ -1,0 +1,288 @@
+/*styling rules for text*/
+
+h1{
+    color:black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+}
+
+
+/*styling for nav bar*/
+
+a{
+    text-decoration: none;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background-color: turquoise;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Arial' , sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+
+.navbar a {
+    color:black
+}
+
+
+
+/*styling for footer*/
+footer{
+    margin-left:0;
+    margin-right:0;
+    border-top:5px solid black;
+    border-width: 100%;
+    padding-top:20px ;
+    margin-top:10% ;
+}
+
+/*styling for body*/
+
+body{
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+
+
+/*styling for home page*/
+
+.components{
+    display:flex;
+    gap:15px;
+}
+
+.components img{
+    width: 100%;
+    height: auto;
+}
+
+/*styling for home page functionalities*/
+.carousel-container2 {
+    width:100%;
+    position: relative;
+    margin:auto;
+}
+
+.mySlides2 {
+    display:none;
+    justify-content: center;
+}
+
+.prev2, .next2 {
+    cursor: pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev2:hover,
+.next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*About Page styling*/
+
+.shital {
+    gap: 20px;
+}
+
+
+/*styling for about page functionalities*/
+
+/*interactive list*/
+.Item1 ,
+.Item2 {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background-color:beige;
+    color: white;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/*Slideshow container*/
+.carousel-container {
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    justify-content: center;
+    gap:10px;
+    display: none;
+
+}
+
+/*Nxt & previous buttons*/
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+/*On hover, add a black background color with a little bit see-through*/
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*Members Profile Popup*/
+.popup
+
+/*Project Page*/
+
+.projects-grid {
+    justify-content: center;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-card {
+    border: solid lightblue;
+    border-radius: 0%;
+    background-color: lightblue;
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+.rectangle {
+    height: 200px;
+    background-color: white;
+}
+
+.popovertextbox {
+    padding: 5;
+    background-color: white;
+    border-width: medium;
+    border-color: black;
+    min-width: 1000px;
+    min-height: 200px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; 
+  }

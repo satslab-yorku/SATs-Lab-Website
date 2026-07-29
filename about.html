@@ -1,74 +1,135 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <meta charset = "UTF-8">
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--import stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        let slideIndex = 0
+
+        function plusSlides(change) {
+            showSlide(slideIndex += change);
+        }
+
+        function showSlide(number) {
+            let slides = document.getElementsByClassName("mySlides");
+            if (number > slides.length - 1) {
+                slideIndex = 0;
+            }
+            else if (number < 0) {
+                slideIndex = slides.length - 1;
+            }
+            else {
+                slideIndex = slideIndex + number
+            }
+
+            let i;
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";   
+            }
+
+            slides[slideIndex].style.display = "flex";
+            
+            console.log(slideIndex);
+        }
+    </script>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="members.html">Members</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="affiliations.html">Partners</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+</head>
+
+<body>
+    <h1>SATs Lab</h1>
+    <p>The SaTS Lab is an interdisciplinary research lab focused on designing inclusive, accessible,
+        and relational technologies. We work with people living with dementia, immigrant and racialized
+        communities, people with speech or cognitive impairments, and other equity-deserving groups to
+        co-create communication systems that prioritize dignity, agency, and care.</p>
+    <br>
     
-  <head>
-      <div class = "navbar">
-        <a href = "index.html">Home</a>
-        <a class = "active" href="about.html">About</a>
-        <a href = "members.html">Members</a>
-        <a href = "projects.html">Projects</a>
-        <a href = "news.html">News</a>
-        <a href = "affiliations.html">Affiliations</a>
-        <a href = "contact.html">Contact</a>
+    
+    <h1>Dr. Shital Desai</h1>
 
-     </div>
-  </head>
+    <div class="shital" style="display: inline-flex;">
+    <img src="placeholder.jpg" style="width: 40%; height: 225px;">
+    
+    <p>Dr. Shital Desai is an Associate Professor of Interaction Design in the School of Arts, Media,
+        Performance & Design and the York Research Chair in Accessible Interaction Design at York University.
+        She directs the Social and Technological Systems (SaTS) Lab, where her community-engaged research focuses
+        on designing accessible technologies for marginalized groups—including people with physical and cognitive
+        impairments, older adults, children, and individuals on the autism spectrum. 
+        <br>Her work examines how technologies
+        can support everyday activities, communication, and relational closeness by understanding people’s needs,
+        habits,
+        and rituals, and by adapting to these dynamic contexts of use.</p>
+    <br>
+    </div>
 
-    <body>
-        <h1>SATs Lab</h1>
-        <p>The SaTS Lab is an interdisciplinary research lab focused on designing inclusive, accessible, 
-            and relational technologies. We work with people living with dementia, immigrant and racialized 
-            communities, people with speech or cognitive impairments, and other equity-deserving groups to 
-            co-create communication systems that prioritize dignity, agency, and care.</p>
-        <br>
-        <!--Insert photo of Shital-->
-        <h1>Dr.Shital Desai</h1>
-        <p>Dr. Shital Desai is an Associate Professor of Interaction Design in the School of Arts, Media, 
-            Performance & Design and the York Research Chair in Accessible Interaction Design at York University.
-             She directs the Social and Technological Systems (SaTS) Lab, where her community-engaged research focuses 
-             on designing accessible technologies for marginalized groups—including people with physical and cognitive 
-             impairments, older adults, children, and individuals on the autism spectrum. Her work examines how technologies
-            can support everyday activities, communication, and relational closeness by understanding people’s needs, habits,
-             and rituals, and by adapting to these dynamic contexts of use.</p>
-        <br>
 
-        <h1>Design for Health, Aging, and Cognitive Care</h1>
-        <p>Our research program on Design for Health, Aging 
-            and Cognitive Care is structured around six interrelated strands 
-            that address communication, care, cultural relevance, rehabilitation,
-            and inclusivity in health contexts.</p>
-        <ul>
-            <li>Cueing, Self-cueing, and embodied interaction</li>
-            <li>Relational Communication in Dementia Care</li>
-            <li>Design for Cultural Relevance in Health</li>
-            <li>Speech and Communication Impairments</li>
-            <li>Rehabilitation and Telewellness</li>
-            <li>Neurodivergence and Autism</li>
-            <li>Chronic Pain Management</li>
-            <li>Global Design Studio: a multidisciplinary initiative to practice
-                experiential education
-            </li>
-        </ul>
+    <h1>Design for Health, Aging, and Cognitive Care</h1>
+    <p>Our research program on Design for Health, Aging
+        and Cognitive Care is structured around six interrelated strands
+        that address communication, care, cultural relevance, rehabilitation,
+        and inclusivity in health contexts.</p>
+    
 
-        <!--Carousel Container-->
-        <div class="carousel-container">
-           <div class="first3">
-            <img src="placeholder.jpg" style="width:20%">
-            <img src="placeholder.jpg" style="width: 20%">
-            <img src="placeholder.jpg" style="width:20%">
-           </div>
-        
-            `<div class="next3">
-            <img src="placeholder.jpg" style="width:20%">
-            <img src="placeholder.jpg" style="width: 20%">
-            <img src="placeholder.jpg" style="width:20%">
-           </div>
-           
-           <!--Next and previous buttons-->
-           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!--Carousel Container-->
+    <div class="carousel-container">
+        <div class="mySlides" style="display: flex;">
+            <img src="placeholder.jpg" style="width:30%">
+            <img src="placeholder.jpg" style="width: 30%">
+            <img src="placeholder.jpg" style="width:30%">
         </div>
 
-    </body>
+        <div class="mySlides">
+            <img src="news.png" style="width:30%">
+            <img src="placeholder.jpg" style="width: 30%">
+            <img src="placeholder.jpg" style="width:30%">
+        </div>
+
+        <div class="mySlides">
+            <img src="placeholder.jpg" style="width:30%">
+            <img src="news.png" style="width: 30%">
+            <img src="placeholder.jpg" style="width:30%">
+        </div>
+
+
+        <div class="mySlides">
+            <img src="placeholder.jpg" style="width:30%">
+            <img src="placeholder.jpg" style="width: 30%">
+            <img src="news.png" style="width:30%">
+        </div>
+
+        <!--Next and previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+</body>
+
+<footer>
+    <div class="footnote">
+        <!--Add images-->
+        <p>School of the Arts, Media, Performance & Design</p>
+        <br>
+        <p>Suite 318, Joan & Martin Golfbarb Centre for Fine Arts York University</p>
+        <br>
+        <p>4700 Keele Street, Toronto, ON Canada M3J 1P3</p>
+        <br>
+        <p>Email: desais@yorku.ca</p>
+    </div>
+</footer>
+
 </html>
