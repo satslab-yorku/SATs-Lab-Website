@@ -30,7 +30,7 @@ a{
 
 .navbar {
     width: 100%;
-    background-color: turquoise;
+    background-color: #af0d1a;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -50,6 +50,18 @@ a{
     color:black
 }
 
+.navbar a:hover {
+    color: white;
+    background-color: #810001;
+   
+
+}
+
+.navbar a.active {
+    background-color: #810001;
+    color: white;
+    font-weight: bold;
+}
 
 
 /*styling for footer*/
@@ -66,8 +78,8 @@ footer{
 
 body{
     margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
@@ -253,9 +265,9 @@ body{
 }
 
 .project-card {
-    border: solid lightblue;
+    border: solid #3AC2EF;
     border-radius: 0%;
-    background-color: lightblue;
+    background-color: #ACE6F8;
     text-align: center;
     margin: 5px;
 }
