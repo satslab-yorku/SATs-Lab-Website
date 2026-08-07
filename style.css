@@ -78,7 +78,7 @@ footer{
 
 body{
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 13%;
     margin-right: 10%;
 
 }
@@ -252,8 +252,10 @@ body{
     }
 }
 
-/*Members Profile Popup*/
-.popup
+/*Members Page*/
+body.members{
+    justify-content: center;
+}
 
 /*Project Page*/
 
@@ -297,4 +299,12 @@ body{
     border: none;
     padding: 0;
     cursor: pointer; 
+  }
+
+  /* Affiliations Page */
+  .Affiliations {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 5fr 5fr 5fr;
+    margin-top:20%;
   }
